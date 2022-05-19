@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Analisis-sidekit</title>
+		<title>Análisis-sidekit</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,27 +28,26 @@
 					<div id="main">
 						<!-- Content -->
 							<section id="content" class="main">
-								<h1><b>Librerias Usadas</b></h1>
+								<h1><b>Librerías Usadas</b></h1>
 									<h2><b>matplotlib</b></h2>
 										<h4>pyplot</h4>
-											<p>Librería de Python especializada en la creación de gráficos en bidimensiones. Permite crear los tipos de gráficos más comunes.</p>
+											<p>Librería de Python especializada en la creación de gráficos bidimensionales. Permite crear los tipos de gráficos más comunes.</p>
 									<h2><b>sklearn</b></h2>
 										<h4>dataset</h4>
-											<p>Genera el conjunto de datos que se utilizara en el modelo, para este caso 1797 muestras de imágenes con dígitos escritos a mano en un tamaño de (8x8) pixeles</p>
+											<p>Genera el conjunto de datos que se utilizara en el modelo, para este caso 1797 muestras de imágenes con dígitos escritos a mano en un tamaño de (8x8) pixeles.</p>
 										<h4>svm</h4>
-											<p>Support vector machine, libreria que contiene el conjunto de algoritmos similares a la regrecion linial pero con el objetivo de clacificar los 
-											datos.</p>
+											<p>Support vector machine, librería que contiene el conjunto de algoritmos similares a la regresión lineal, pero con el objetivo de clasificar los datos.</p>
 										<h4>metrics</h4>
-											<p>Nos permite ver la informacion referente a las metricas de rendimiento del modelo, permitiendo evaluar aspectos como la precision.</p>
+											<p>Nos permite ver la información referente a las métricas de rendimiento del modelo, permitiendo evaluar aspectos como la precisión.</p>
 										<h4>train_test_split</h4>
-											<p>Libreria que nos premite separar los datos que van a entrar a la red neuronal entre datos de prueba y de entrenamiento.</p>
+											<p>Librería que nos permite separar los datos que van a entrar a la red neuronal entre datos de prueba y de entrenamiento.</p>
 								<h1><b>Datos utilizados</b></h1>
-										<p>Partimos de imagenes de 8x8 pixeles, las cuales guarna los valos de la escala de grises de los pixeles en un arreglo de 8x8 correspondientes a cada muestra.</p>
+										<p>Partimos de imágenes de 8x8 pixeles, las cuales guardan los valores de la escala de grises de los pixeles en un arreglo de 8x8 correspondientes a cada muestra.</p>
 										<a><img src = "images/imagenes analisis/digit_dataset.png" width="400px" height = "200px" style="position: relative; left: 10px;"></a>
 									<h2><b>Transformación</b></h2>
-										<p>Posterior mente transformamos los datos para que puedan ser procesados por la red neuronal. Pirmero comvertimos el arreglo de 8x8 a una lista de 64 pixeles. Despues le damos forma al conjunto de datos en un arreglo que sea (n_imagen,n_pixel). </p>
+										<p>Posterior mente transformamos los datos para que puedan ser procesados por la red neuronal. Primero convertimos el arreglo de 8x8 a una lista de 64 pixeles. Después le damos forma al conjunto de datos en un arreglo que sea (n_imagen,n_pixel).</p>
 									<h2><b>División</b></h2>
-										<p>Para que la red funcione nesecita ser entrenada y probada, por ello el conjunto de datos en dos uno de pruebas y otro de entenamiento. Por ello dividimos los datos en 50% para ambos y de la forma (X_train, y_train) y (X_test, y_test). </p>
+										<p>Para que la red funcione necesita ser entrenada y probada, por ello el conjunto de datos en dos uno de pruebas y otro de entrenamiento. Por ello dividimos los datos en 50% para ambos y de la forma (X_train, y_train) y (X_test, y_test).</p>
 										<a><img src = "https://thumbs.dreamstime.com/b/el-por-ciento-gr%C3%A1fico-de-sectores-de-gris-azul-y-del-blanco-infographics-del-vector-del-porcentaje-ejemplo-del-negocio-del-86867736.jpg" width="200px" height = "200px" style="position: relative; left: 10px;"></a>
 								<h1><b>Funcionamiento de la red neuronal</b></h1>
 										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
