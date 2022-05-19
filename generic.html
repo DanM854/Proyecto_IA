@@ -36,14 +36,14 @@
 										<h4>dataset</h4>
 											<p>Genera el conjunto de datos que se utilizara en el modelo, para este caso 1797 muestras de imágenes con dígitos escritos a mano en un tamaño de (8x8) pixeles</p>
 										<h4>svm</h4>
-											<p>Support vector machine, libreria que contiene el conjunto de algoritmos similares a la regrecion linial pero con el objetivo de clacificar los 
+											<p>Support vector machine, libreria que contiene el conjunto de algoritmos similares a la regresión lineal pero con el objetivo de clacificar los 
 											datos.</p>
 										<h4>metrics</h4>
 											<p>Nos permite ver la informacion referente a las metricas de rendimiento del modelo, permitiendo evaluar aspectos como la precision.</p>
 										<h4>train_test_split</h4>
-											<p>Libreria que nos premite separar los datos que van a entrar a la red neuronal entre datos de prueba y de entrenamiento.</p>
+											<p>Librería que nos premite separar los datos que van a entrar a la red neuronal entre datos de prueba y de entrenamiento.</p>
 								<h1><b>Datos utilizados</b></h1>
-										<p>Partimos de imagenes de 8x8 pixeles, las cuales guarna los valos de la escala de grises de los pixeles en un arreglo de 8x8 correspondientes a cada muestra.</p>
+										<p>Partimos de imágenes de 8x8 pixeles, las cuales guarna los valos de la escala de grises de los pixeles en un arreglo de 8x8 correspondientes a cada muestra.</p>
 										<a><img src = "images/imagenes analisis/digit_dataset.png" width="400px" height = "200px" style="position: relative; left: 10px;"></a>
 									<h2><b>Transformación</b></h2>
 										<p>Posterior mente transformamos los datos para que puedan ser procesados por la red neuronal. Pirmero comvertimos el arreglo de 8x8 a una lista de 64 pixeles. Despues le damos forma al conjunto de datos en un arreglo que sea (n_imagen,n_pixel). </p>
