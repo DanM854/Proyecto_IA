@@ -60,24 +60,24 @@
 										<a><img src = "images/imagenes analisis/tabla_comparacion.png" width="400px" height = "250px" style="position: relative; left: 10px;"></a>
 									<h2><b>Tipo de red</b></h2>
 										<a><img src = "https://img.microsiervos.com/images2016/Neural-Networks-Chart.png" width="400px" height = "300px" style="position: relative; left: 10px;"></a>
-										<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
+										<p>La red neuronal es de tipo RBF (radial basic function) la cual consiste de una capa de datos de entrada, otra oculta donde en este caso se encuentra las neuronas radiales básicas y otra que tiene la neurona de salida. Este es comparable con uno de tipo FF(Feed forward) pero lo diferencia lo que está dentro de la capa oculta.</p>
 								<h1><b>Funcionamiento Interno</b></h1>
-										<p>faucibus.</p>
+										<p>El caso ideal es que podamos dividir las categorías con una función lineal, sin embargo los datos pueden no ser compatibles con ello. Por ejemplo, al estar intercalados en una línea recta, esto hace necesario hacer transformaciones a nuestra función inicial..</p>
 										<a><img src = "images/imagenes analisis/dificil_clacificacion.png" width="400px" height = "250px" style="position: relative; left: 10px;"></a>
-										<p>faucibus.</p>
+										<p>En el caso del modelo a analizar al tener varias categorías con datos que son propensos a solaparse o agruparse es necesario encontrar una función que los clasifique eficientemente. Para ello debemos escoger un truco para el kernel.</p>
 										<a><img src = "images/imagenes analisis/clasifier.png" width="400px" height = "250px" style="position: relative; left: 10px;"></a>
 										
 									<h2><b>Kernel</b></h2>
-											<p>a</p>
+											<p>El kernel dentro del modelo funciona como un filtro, que nos permite aplicar clasificadores lineales a datos no lineales. En el caso del modelo tenemos datos de arreglos 2-D y gracias a que dentro del código hay un factor gamma podemos concluir que el truco usado es una Función de base radial Gaussiana.</p>
 											<img src = "images/imagenes analisis/sin_curbar.png" width="400px" height = "250px" style="position: relative; left: 10px;"></a>
 										<h4><b>Funcion de base radial Gaussiana</b></h4>
-											<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis fames ac ante ipsum primis in faucibus.</p>
+											<p>Dicha función recibe como parámetros una coordenada y el dato del valor real, luego consiste de una exponencial con base euler la cual tiene como exponente la norma de la coordenada, lo cual nos da la distancia de los puntos en el plano. Todo lo anterior está sobre dos veces el factor gamma cuadrado. Esto lo que permite es que a través de la manipulación del valor gamma se pueda ajustar la curvatura de la función gaussiana para que categorice de mejor manera los datos introducidos. A mayro valor en gamma toma en cuenta los datos más cercanos a la función, haciendo que sea más impreciso; mientras que a menor valor toma en cuenta los datos más alejados de esta mejorando la precisión al contrastar con los resultados reales de los datos de prueba.</p>
 											<img src = "images/imagenes analisis/formula.png" width="400px"height = "200px" style="position: relative; left: 10px;"></a>
 											<img src = "images/imagenes analisis/curbada.png" width="400px" height = "250px" style="position: relative; left: 10px;"></a>
 										<h4><b>Resultados</b></h4>
-										<p>a</p>
+										<p>Después de haber entrenado el modelo a la hora de usar la función de predicción solo solicitara las coordenadas de los datos a introducir y retorna la predicción de la categoría a la que pertenece la imagen ingresada de los datos de prueba.</p>
 										<img src = "images/imagenes analisis/prediccion.png" width="400px" height = "250px" style="position: relative; left: 10px;"></a>
-								<p>Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Consequat leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit enim turpis lorem ipsum dolor sit amet feugiat. Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet est velit quis lorem.</p>
+								<p>Podemos observar a su vez que por más que categorize correctamente la mayoría de imágenes falla ya que siempre se tiene un margen de error, para saber la magnitud de este a través de las métricas que se pueden extraer de este.</p>
 								<h2><b>Metricas de la red</b></h2>
 								<p>Cep Tempus adipiscing arcu.</p><a>
 								<img src = "images/imagenes analisis/confucion.png" width="250px" height = "250px" style="position: relative; left: 10px;"></a>
